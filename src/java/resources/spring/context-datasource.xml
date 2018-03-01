@@ -11,34 +11,10 @@
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd">
 
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.driver"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/restapi" />
         <property name="username" value="username"/>
         <property name="password" value="password"/>
     </bean>
-	
-<!-- 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> -->
-<!--         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/> -->
-<!--         <property name="url" value="jdbc:oracle:thin:@211.206.115.73:1521:xe" /> -->
-<!--         <property name="username" value="koredex"/> -->
-<!--         <property name="password" value="qwer"/> -->
-<!--         <property name="connectionInitSqls"> -->
-<!--         	<list> -->
-<!--         		<value>ALTER SESSION SET NLS_DATE_FORMAT = 'RRRR-MM-DD HH24:MI:SS'</value> -->
-<!--         		<value>ALTER SESSION SET NLS_TIMESTAMP_TZ_FORMAT = 'RRRR-MM-DD"T"HH24:MI:SS.FF3"Z"'</value> -->
-<!--         	</list> -->
-<!--         </property> -->
-<!--     </bean> -->
-    
-<!-- 	SqlSession setup for MyBatis Database Layer -->
-	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource" />
-<!-- 		<property name="configLocation" value="classpath:/sqlmap/sql-mapper-config.xml" /> -->
-		<property name="mapperLocations" value="classpath:/sqlmap/mappers/**/mysql_*.xml" />
-	</bean>
-
-<!-- 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" > -->
-<!-- 	    <property name="basePackage" value="restapi" /> -->
-<!-- 	</bean> -->
 	
 </beans>

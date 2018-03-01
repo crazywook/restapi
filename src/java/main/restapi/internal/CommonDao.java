@@ -1,4 +1,4 @@
-package restapi.api;
+package restapi.internal;
 
 import java.util.HashMap;
 import java.util.List;
