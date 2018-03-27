@@ -32,8 +32,7 @@ RestApi를 객체지향 프로그램 원칙에 근거해서 코딩
 </ul>
 
 ## REST API 구성
-
-/api/{service provider}/{version}/{resources}
+``` /api/{service provider}/{version}/{resources} ```
 
 첫번째는 url이 api라는 것을 나타내고
 두번째는 api 서비스 공급자를 표시
