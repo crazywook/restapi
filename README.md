@@ -22,8 +22,7 @@ RestApi를 객체지향 프로그램 원칙에 근거해서 코딩
 		<ul>
 			<li>ApiUrl.java
 			<li>BitMexUrl.java
-		</ul>
-	<li>
+		</ul>	
 	<li>restapi.util
 		<ul>
 			<li>HtmlConverter.java
